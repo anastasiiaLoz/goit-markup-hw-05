@@ -144,16 +144,6 @@ header {
   background-color: var(--accent-color);
   }
 
-.site-nav .link.current:before{
-  content: "";
-  position: absolute;
-  display: block;
-  color: currentColor;
-  padding-bottom: 28px;
-}
-
-
-
 
 /* ______________Header Email & Phone#_____________ */
 
@@ -762,7 +752,7 @@ footer {
   text-decoration: none;
 }
 
-.projects-works:hover,
+.projects-works:hover
 .projects-works:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -771,7 +761,6 @@ footer {
 
 .projects-overlay {
   position: relative;
-  /* padding: (63px, 24px); */
   margin-left: auto;
   width: 370px;
   height: 294px;
@@ -800,11 +789,9 @@ footer {
   height: 100%;
   background-color: var(--accent-color);
   
-
   transform: translatey(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
