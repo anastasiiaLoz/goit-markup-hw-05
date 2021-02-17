@@ -607,6 +607,7 @@ footer {
 .footer-social{
   display: flex;
   align-items: baseline;
+  
 }
 
 .footer-media {
