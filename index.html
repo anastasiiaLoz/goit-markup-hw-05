@@ -45,10 +45,19 @@
         <section class="banner">
             <div class="container">
             <h1 class="banner-title">Эффективные решения<br />для вашего бизнеса</h1>
-            <button type="button" class="banner-button">Заказать услугу</button>
+            <button type="button data-modal-open" class="banner-button">Заказать услугу</button>
             </div>
-        </section>
-        
+        </section> 
+            
+
+        <!-- -------МОДАЛЬНОЕ ОКНО -->
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close>Закрыть</button>
+                </div>
+            </div>
+    
         <!--Specialties section-->
         <section class="specials-section">
             <!-- Title Особенности позже скроется -->
@@ -348,9 +357,6 @@
         </section>
 
 
-
-
-
         <!--Footer section-->
         
         <footer>
@@ -407,7 +413,9 @@
             </div>
         </footer>
     </main>
+    <script src="./js/modal.js"></script>
     </body>
+</html>
     
     
     
