@@ -351,6 +351,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  margin: 0auto;
 }
 
 .work-section {
@@ -361,7 +362,7 @@ header {
 .mobile> img,
 .solution> img {
   display: block;
-  max-width: 100%;
+  width: 370px;
   height: auto;
 
 }
@@ -370,16 +371,14 @@ header {
 .solution {
   position: relative;
   overflow: hidden;
-  background-color: rgba(47, 48, 58, 0.8);
-  z-index: 2;
+  
 }
 
 .desktop-label,
 .mobile-label,
 .designer-solution-label {
   position: absolute;
-  bottom: 30px;
-  left: 82px;
+  bottom: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -387,14 +386,13 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  border-top-left-radius: 4px;
-  
-  border-radius: 4px;
-
+  background-color: rgba(47, 48, 58, 0.8);
+  z-index: 2;
+  padding: 28px;
+  width:370px;
+  height:70px;
 
 }
-
-
 
 
 
@@ -763,14 +761,49 @@ footer {
   text-decoration: none;
 }
 
-.projects-works-link:hover,
-.projects-works-link:focus {
+.projects-works:hover,
+.projects-works:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   
 }
 
+.projects-overlay {
+  position: relative;
+  /* padding: (63px, 24px); */
+  margin-left: auto;
+  width: 370px;
+  height: 294px;
+  background-color: var(--accent-color);
+  overflow: hidden;
 
+}
 
+.projects-overlay p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  
+}
+
+.projects-overlay:hover .overlay-text {
+  transform: translatey(-100%);
+  
+}
+
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  
+
+  transform: translatey(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 
 
